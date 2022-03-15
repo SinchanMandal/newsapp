@@ -27,7 +27,13 @@ app.use(session({
 
 app.use(passport.initialize());
 app.use(passport.session());
-mongoose.connect("mongodb://localhost:27017/news", {
+
+//////////////////////
+
+
+///////////////////////////
+//mongodb+srv://sinchan:<password>@cluster0.ft3ko.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+mongoose.connect("mongodb+srv://sinchan:sinchan@cluster0.ft3ko.mongodb.net/news", {
   useNewUrlParser: true
 });
 
